@@ -88,8 +88,7 @@ personaFind("3-7") '''
 #Actualizar Documentos: Documentos
 '''
 personaUpdate("2-8", 16, "Masculino")
-personaUpdate("4-6", 26, "Femenino")
-personaUpdate("5-5", 36, "Masculino") '''
+personaUpdate("4-6", 26, "Femenino") '''
 
 #Eliminar Documentos
 '''
