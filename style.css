@@ -1,0 +1,61 @@
+
+ h1 {
+ color: blue;
+ }
+ p {
+ font-size: 14px;
+ color: gray;
+ }
+
+h1 {
+ color: red;
+}
+
+div {
+ width: 300px;
+ height: 150px;
+}
+
+p {
+ border: 1px solid black;
+}
+
+p {
+ margin: 20px;
+}
+
+div {
+ padding: 15px;
+}
+
+
+caja {
+ width: 200px;
+ height: 100px;
+ padding: 20px;
+ border: 2px solid black;
+ margin: 10px;
+ }
+
+ static {
+ position: static;
+ background-color: lightgray;
+ }
+ .relative {
+ position: relative;
+ top: 10px;
+ left: 20px;
+ background-color: lightblue;
+ }
+ .absolute {
+ position: absolute;
+ top: 30px;
+ left: 50px;
+ background-color: lightgreen;
+ }
+ .fixed {
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ background-color: lightcoral;
+ }
