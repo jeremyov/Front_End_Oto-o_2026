@@ -75,7 +75,70 @@ section{
 
 .about{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
     align-items: center;
+}
+
+.about img{
+    width: 50%;
+    border-radius: 12px;
+}
+
+.course-card,
+.benefit-box{
+    background-color: rgb(242, 242, 242);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    color: rgb(0, 0, 0);
+}
+
+.course-grid,
+.benefit-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.benefits{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.contact-form{
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: #0aca3d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #040f28;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
