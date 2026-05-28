@@ -3,7 +3,7 @@ const addbtn = document.getElementById('addBtn');
 const taskList = document.getElementById('taskList');
 
 addbtn.addEventListener('click', () => {
-    const text = taskInput.ariaValueMax.trim();
+    const text = taskInput.value.trim();
     if (text === '') {
         alert('Ingrese un valor');
         return;
