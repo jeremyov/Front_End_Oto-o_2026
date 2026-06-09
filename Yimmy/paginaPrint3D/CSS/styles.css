@@ -5,12 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #ffffff;
+    background-color: #0E2C3F;
     color: #000000;
 }
 
 header{
-    background-color: #2e5bc6;
+    background-color: #111c3a;
     padding: 20px 8%;
     text-align: fixed;
     width: 100%;
@@ -23,9 +23,23 @@ nav{
 }
 
 .logo{
-    color: rgb(57, 8, 8);
-    font-size: 1.8rem;
+    display: grid;
+    color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    font-size: 2.5rem;
     font-weight: bold;
+}
+
+.logo img{
+    width: 50%;
+    border-radius: 12px;
+}
+
+.slogan {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #b8b8b8;
 }
 
 nav ul{
@@ -40,13 +54,19 @@ nav a{
 }
 
 .hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #333;
+    color: #fafafa;
     padding: 0 8%;
+}
+
+.hero img{
+    width: 80%;
+    border-radius: 12px;
 }
 
 .contenido_a h1{
@@ -54,10 +74,16 @@ nav a{
     margin-bottom: 28px;
 }
 
+.contenido_a p{
+    font-size: 1.5rem;
+    margin: 35px;
+    text-align: center;
+}
+
 .btn{
     display: inline-block;
     padding: 28px 40px;
-    background-color: green;
+    background-color: #111c3a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -69,8 +95,19 @@ section{
 }
 
 .section-title{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
+    color: white;
+}
+
+.section-title p{
+    margin: 30px;
+}
+
+.nosotros-title{
+    font-size: 3rem;
+    margin-bottom: 28px;
+    color: white;
 }
 
 .about{
