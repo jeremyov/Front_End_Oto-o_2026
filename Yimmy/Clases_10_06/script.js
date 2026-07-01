@@ -14,15 +14,12 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     if (nombre === '') {
         errores.push('Que? no tienes nombre?');
         }
-
     if (email === '') {
         errores.push('Pon tu correo pequeño Billy');
         }
-
     if (edad === '') {
         errores.push('El campo edad es obligatorio.');
         }
-
     if (errores.length > 0) {
         event.preventDefault();
         document.getElementById('errores').innerHTML = errores.join('<br>');

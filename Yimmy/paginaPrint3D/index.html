@@ -11,7 +11,7 @@
         <nav>
             <div class="logo"> 
                 <div>
-                <img src="IMG\Kirammanlogo2.png" alt="Placeholder Image">
+                <img src="https://imgur.com/F1ItZkc.png" alt="Placeholder Image">
                 </div>
                 <div>
                     Kiramman Maker
@@ -30,7 +30,7 @@
     </header>
     <section class="hero" id="inicio">
         <div>
-            <img src="IMG\Figuras1.png" alt="Placeholder Image">
+            <img src="https://imgur.com/wH796wi.png" alt="Placeholder Image">
         </div>
         <div class="contenido_a">
             <h1>Tus personajes favoritos impresos con la máxima calidad</h1>
@@ -57,7 +57,7 @@
                 buscando que cada pieza destaque tanto por su calidad de impresión como por su terminación artística.</p>
             </div>
             <div>
-                <img src="IMG\Nosotros.png" alt="Placeholder Image">
+                <img src="https://imgur.com/Z3GzzZz.png" alt="Placeholder Image">
             </div>
         </div>
     </section>
@@ -68,17 +68,14 @@
         </div>
         <div class="figures-grid">
             <div class="figures-card">
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slider-11" src="IMG\Sailor_1.png" alt="">
-                        <img id="slider-21" src="IMG\Sailor_2.png" alt="">
-                        <img id="slider-31" src="IMG\Sailor_3.png" alt="">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="https://imgur.com/3vCLQac.png" alt="">
+                        <img src="https://imgur.com/Yx38FLA.png" alt="">
+                        <img src="https://imgur.com/3SMqJN3.png" alt="">
                     </div>
-                    <div class="slider-nav">
-                        <a href="#slider-11"></a>
-                        <a href="#slider-21"></a>
-                        <a href="#slider-31"></a>
-                    </div>
+                    <button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(this,1)">&#10095;</button>
                 </div>
                 <h3>Usagi Tsukino</h3>
                 <p>Sailor Moon</p>
@@ -89,17 +86,14 @@
                 </ul>
             </div>
             <div class="figures-card">
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slider-12" src="IMG\Zoro_1.png" alt="">
-                        <img id="slider-22" src="IMG\Zoro_2.png" alt="">
-                        <img id="slider-32" src="IMG\Zoro_3.png" alt="">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="https://imgur.com/oQwArpy.png" alt="">
+                        <img src="https://imgur.com/qLeah9Y.png" alt="">
+                        <img src="https://imgur.com/Z4cfeJd.png" alt="">
                     </div>
-                    <div class="slider-nav">
-                        <a href="#slider-12"></a>
-                        <a href="#slider-22"></a>
-                        <a href="#slider-32"></a>
-                    </div>
+                    <button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(this,1)">&#10095;</button>
                 </div>
                 <h3>Roronoa Zoro</h3>
                 <p>One Pice</p>
@@ -110,17 +104,14 @@
                 </ul>
             </div>
             <div class="figures-card">
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slider-13" src="IMG\Anya_1.png" alt="">
-                        <img id="slider-23" src="IMG\Anya_2.png" alt="">
-                        <img id="slider-33" src="IMG\Anya_3.png" alt="">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="https://imgur.com/iOmv2wQ.png" alt="">
+                        <img src="https://imgur.com/1GtWhs0.png" alt="">
+                        <img src="https://imgur.com/TnK1ums.png" alt="">
                     </div>
-                    <div class="slider-nav">
-                        <a href="#slider-13"></a>
-                        <a href="#slider-23"></a>
-                        <a href="#slider-33"></a>
-                    </div>
+                    <button class="prev" onclick="moveSlide(this,-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(this,1)">&#10095;</button>
                 </div>
                 <h3>Anya and Bond</h3>
                 <p>Spy x Family</p>
@@ -136,20 +127,21 @@
 
     <section class="contact" id="contacto">
         <div class="from-grid">
-            <form class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name"placeholder="Ingresa tu nombre completo" >
+                    <label for="name">Nombre:</label><br><br>
+                    <input type="text" id="name" name="name"placeholder="Ingresa tu nombre completo">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" >
+                    <label for="email">Email:</label><br><br>
+                    <input type="text" id="email" name="email" placeholder="Ingresa tu email">
                 </div>
                 <div class="form-group">
-                    <label for="message">Mensaje:</label>
+                    <label for="message">Mensaje:</label><br><br>
                     <textarea id="message" name="message" placeholder="Puedes dejar tu personaje mencionando a que serie, anime o juego al que pertenece más el tamaño aproximado"></textarea>
                 </div>
-                <button type="submit">Solicitar Cotización</button>
+                <button class="formButton" type="submit">Solicitar Cotización</button>
+                <div class="errores" id="errores"></div>
             </form>
             <div class="section-title">
                 <h2>¿Tienes una idea en mente?</h2>
@@ -157,6 +149,7 @@
                 Ya sea una figura personalizada o un personaje de tu saga favorita, 
                 estaremos encantados de ayudarte a hacerlo realidad.</p>
             </div>
+            <script src="script.js" defer></script>
         </div>
     </section>
     <footer>
