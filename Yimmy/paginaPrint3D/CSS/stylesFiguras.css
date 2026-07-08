@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(circle at left,
+            rgba(40,70,150,.20),
+            transparent 40%),
+
+        radial-gradient(circle at right,
+            rgba(214,181,108,.08),
+            transparent 35%),
+
+        linear-gradient(
+            135deg,
+            #111,
+            #171717,
+            #0d0d0d
+        );
+}
+
+header{
+    background-color: #111c3a;
+    padding: 20px 8%;
+    text-align: fixed;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    padding: 90px 8%;
+}
+
+.logo{
+    display: grid;
+    color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.titulo-logo {
+    background: linear-gradient(135deg, #f3e5ab 0%, #b8975a 50%, #8a6f3e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 50%;
+    border-radius: 12px;
+}
+
+.slogan {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #b8b8b8;
+}
+
+nav ul{
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/*.figures-card {  ORIGINAL
+    background-color: #1e1b29;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    color: rgb(255, 255, 255);
+    border-color: #bd00ff;
+}*/
+
+/*.figures-card {
+    background-color: #1e1b29;
+    padding: 30px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+
+    border: 2px solid #ff0055;
+
+    box-shadow: 
+        0 0 15px rgba(255, 0, 85, 0.5),
+        inset 0 0 10px rgba(255, 0, 85, 0.3);
+}*/
+
+.figures-card {
+    background-color: #1e1b29;
+    padding: 30px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to right, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055) 1;
+    animation: rgb-rainbow 6s linear infinite;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+}
+
+.figures-card:hover {
+    transform: scale(1.03); 
+    animation-duration: 2s; 
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.25)); 
+    cursor: pointer;
+}
+
+.figures-card IMG{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.figures-card h3{
+    margin: 20px;
+}
+
+.figures-card h3{
+    background: linear-gradient(135deg, #f3e5ab 0%, #b8975a 50%, #8a6f3e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.figures-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin:  auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    aspect-ratio: .75 / 1;
+    transition: transform .5s ease-in-out;
+}
+
+.slides img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next {
+    right: 10px
+}
+
+footer{
+    background-color: #111c3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes rgb-rainbow {
+    0% { border-image-source: linear-gradient(0deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    25% { border-image-source: linear-gradient(90deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    50% { border-image-source: linear-gradient(180deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    75% { border-image-source: linear-gradient(270deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    100% { border-image-source: linear-gradient(360deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+}

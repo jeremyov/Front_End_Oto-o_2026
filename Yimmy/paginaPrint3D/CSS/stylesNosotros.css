@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:
+        radial-gradient(circle at left,
+            rgba(40,70,150,.20),
+            transparent 40%),
+
+        radial-gradient(circle at right,
+            rgba(214,181,108,.08),
+            transparent 35%),
+
+        linear-gradient(
+            135deg,
+            #111,
+            #171717,
+            #0d0d0d
+        );
+}
+
+header{
+    background-color: #111c3a;
+    padding: 20px 8%;
+    text-align: fixed;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: grid;
+    color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.titulo-logo {
+    background: linear-gradient(135deg, #f3e5ab 0%, #b8975a 50%, #8a6f3e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 50%;
+    border-radius: 12px;
+}
+
+.slogan {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #b8b8b8;
+}
+
+nav ul{
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    padding: 90px 8%;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.section-title h2{
+    background: linear-gradient(135deg, #f3e5ab 0%, #b8975a 50%, #8a6f3e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.section-title p,
+.about p{
+    background: linear-gradient(135deg, #2C55AA 0%, #406ECE 50%, #111C3A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.section-title p{
+    margin: 30px;
+}
+
+.nosotros-title{
+    font-size: 3rem;
+    margin-bottom: 28px;
+    color: white;
+}
+
+.about{
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.about img{
+    width: 80%;
+    border-radius: 1px;
+}
+
+footer{
+    background-color: #111c3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

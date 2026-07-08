@@ -73,54 +73,7 @@ nav a{
     text-decoration: none;
 }
 
-.hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fafafa;
-    padding: 0 8%;
-}
-
-.hero img{
-    width: 80%;
-    border-radius: 12px;
-}
-.hero img:hover{
-    transform:translateY(-8px) scale(1.03);
-}
-
-.contenido_a h1{
-    font-size: 3rem;
-    margin-bottom: 28px;
-    background: linear-gradient(135deg, #f3e5ab 0%, #b8975a 50%, #8a6f3e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-
-    position:relative;
-    overflow:hidden;
-}
-
-.contenido_a p{
-    font-size: 1.5rem;
-    margin: 35px;
-    text-align: center;
-}
-
-/*.btn{
-    display: inline-block;
-    padding: 28px 40px;
-    background-color: #d4af37;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}*/
-
-.btn {
+.formButton {
     display: inline-block;
     padding: 28px 40px;
     
@@ -141,7 +94,7 @@ nav a{
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.formButton:hover {
     animation-duration: 4s;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
@@ -160,6 +113,26 @@ section{
     padding: 90px 8%;
 }
 
+.section-title h2{
+    background: linear-gradient(135deg, #f3e5ab 0%, #b8975a 50%, #8a6f3e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.section-title p{
+    background: linear-gradient(135deg, #2C55AA 0%, #406ECE 50%, #111C3A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    position:relative;
+    overflow:hidden;
+}
+
 .section-title{
     font-size: 1.5rem;
     text-align: center;
@@ -168,85 +141,6 @@ section{
 
 .section-title p{
     margin: 30px;
-}
-
-.nosotros-title{
-    font-size: 3rem;
-    margin-bottom: 28px;
-    color: white;
-}
-
-.about{
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    align-items: center;
-    color: white;
-}
-
-.about img{
-    width: 80%;
-    border-radius: 1px;
-}
-
-.figures-card {
-    background-color: #111c3a;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    color: rgb(255, 255, 255);
-}
-
-.figures-card h3{
-    margin: 20px;
-}
-
-.figures-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-
-.slider {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin:  auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    aspect-ratio: .75 / 1;
-    transition: transform .5s ease-in-out;
-}
-
-.slides img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
-.prev, .next{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.prev{
-    left: 10px;
-}
-
-.next {
-    right: 10px
 }
 
 .from-grid {
@@ -261,9 +155,16 @@ section{
 
 .contact-form{
     max-width: 700px;
-    background: #111c3a;
+    background-color: #1e1b29;
     padding: 40px;
     border-radius: 12px;
+    color: rgb(255, 255, 255);
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to right, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055) 1;
+    animation: rgb-rainbow 6s linear infinite;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+
 }
 
 .form-group{
@@ -306,4 +207,12 @@ footer{
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+@keyframes rgb-rainbow {
+    0% { border-image-source: linear-gradient(0deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    25% { border-image-source: linear-gradient(90deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    50% { border-image-source: linear-gradient(180deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    75% { border-image-source: linear-gradient(270deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
+    100% { border-image-source: linear-gradient(360deg, #ff0055, #00f2fe, #00ff55, #ffeb3b, #ff0055); }
 }

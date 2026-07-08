@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/stylesContacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> 
+                <div>
+                <img src="https://imgur.com/F1ItZkc.png" alt="Placeholder Image">
+                </div>
+                <div>
+                    <div class="titulo-logo">
+                    Kiramman Maker
+                    </div>
+                    <p class="slogan">
+                        Impresión 3D en resina para verdaderos coleccionistas
+                    </p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="figuras.html">Figuras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <section class="contact" id="contacto">
+        <div class="from-grid">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label><br><br>
+                    <input type="text" id="name" name="name"placeholder="Ingresa tu nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label><br><br>
+                    <input type="text" id="email" name="email" placeholder="Ingresa tu email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label><br><br>
+                    <textarea id="message" name="message" placeholder="Puedes dejar tu personaje mencionando a que serie, anime o juego al que pertenece más el tamaño aproximado"></textarea>
+                </div>
+                <button class="formButton" type="submit">Solicitar Cotización</button>
+                <div class="errores" id="errores"></div>
+            </form>
+            <div class="section-title">
+                <h2>¿Tienes una idea en mente?</h2>
+                <p>Contáctanos y conversemos sobre tu próximo proyecto. 
+                Ya sea una figura personalizada o un personaje de tu saga favorita, 
+                estaremos encantados de ayudarte a hacerlo realidad.</p>
+            </div>
+        </div>
+    </section>
+    <script src="JS/scriptContacto.js" defer></script>
+</body>
+</html>
